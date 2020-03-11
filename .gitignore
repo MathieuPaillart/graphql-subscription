@@ -3,3 +3,5 @@
 .idea/sonarlint/
 .idea
 .idea/
+
+.target/
