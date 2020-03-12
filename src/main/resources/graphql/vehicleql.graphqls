@@ -1,8 +1,8 @@
 type Vehicle {
-	id: ID!,
-	type: String,
-	modelCode: String,
-	brandName: String,
+	id: ID!
+	type: String
+	modelCode: String
+	brandName: String
 	launchDate: String
 }
 
@@ -17,5 +17,5 @@ type Mutation {
 }
 
 type Subscription {
-	vehiclePublisher(vehiculeId: String!): Vehicle
+	vehiclePublisher(vehicleId: String!): Vehicle
 }

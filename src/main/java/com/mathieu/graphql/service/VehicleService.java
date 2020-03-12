@@ -2,6 +2,7 @@ package com.mathieu.graphql.service;
 
 import com.mathieu.graphql.dao.entity.Vehicle;
 import com.mathieu.graphql.dao.repository.VehicleRepository;
+import io.leangen.graphql.spqr.spring.annotation.GraphQLApi;
 import io.leangen.graphql.spqr.spring.util.ConcurrentMultiRegistry;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
