@@ -15,7 +15,6 @@ public class VehiclePublisher implements GraphQLSubscriptionResolver {
     @Autowired
     private VehicleService vehicleService;
 
-    @GraphQLSubscription
     public Publisher<Vehicle> vehiclePublisher(String vehicleId) {
         System.out.println("test");
         return Flux.create(subscriber -> vehicleService.getSubscribers().add(vehicleId, subscriber.onDispose(() -> vehicleService.getSubscribers().remove(vehicleId, subscriber))), FluxSink.OverflowStrategy.LATEST);
